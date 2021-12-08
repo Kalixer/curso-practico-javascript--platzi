@@ -12,7 +12,61 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Figuras geométricas</h1>
+    <header>
+        <h1>
+            Figuras geométricas
+        </h1>
+        <p>Este es el primer taller del curso práctico de JavaScript</p>
+    </header>
+
+    <section>
+        <h2>Calcula el área y perímetro de un cuadrado</h2>
+        <form>
+            <label for="InputCuadrado">
+                Escribe cuánto miden cada lado del cuadrado
+            </label>
+            <input id="InputCuadrado" type="number" />
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+                Calcula el perímetro
+            </button>
+            <button type="button" onclick="calcularAreaCuadrado()">
+                Calcula el área 
+            </button>
+        </form>
+    </section>
+    <section>
+        <h2>Calcula el área y perímetro de un triángulo</h2>
+        <form>
+            <label>
+                Escribe cuánto miden cada lado del triángulo
+            </label>
+            <input id="InputTriangulo1" type="number" />
+            <input id="InputTriangulo2" type="number" />
+            <input id="InputBase" type="number" />
+            <input id="InputAltura" type="number" />
+            <button type="button" onclick="calcularPerimetroTriangulo()">
+                Calcula el perímetro
+            </button>
+            <button type="button" onclick="calcularAreaTriangulo()">
+                Calcula el área 
+            </button>
+        </form>
+    </section>
+    <section>
+        <h2>Calcula el área y perímetro de un circulo</h2>
+        <form>
+            <label for="InputCirculo">
+                Escribe cuánto miden la circunferencia y el área del circulo
+            </label>
+            <input id="InputCirculo" type="number" />
+            <button type="button" onclick="calcularCircunferenciaCirculo()">
+                Calcula la circunferencia
+            </button>
+            <button type="button" onclick="calcularAreaCirculo()">
+                Calcula el área 
+            </button>
+        </form>
+    </section>
     <script src="./index.js"></script>
 </body>
 </html>
