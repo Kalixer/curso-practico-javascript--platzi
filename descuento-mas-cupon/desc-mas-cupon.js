@@ -1,13 +1,6 @@
-const descuentoDefault = 15;
-
-
-
-
 // Esto es solo para escribir el resultado
 const precio = document.getElementById("precioAnterior");
 const precioFinal = document.getElementById("precioConDescuento");
-
-descuento.innerText = descuentoDefault + "%OFF";
 
 
 function calcularDescuento(precio, desc) {
@@ -31,7 +24,7 @@ function accionDeBoton(){
 
     console.log("Click");
 
-    const descuentoTotal = (descuentoDefault + descuentoAdicional + cupon);
+    const descuentoTotal = (descuentoAdicional + cupon);
     descuento.innerText = descuentoTotal + "%OFF";
     
     precio.innerHTML = "<strike>" + precioOriginal + "</strike>";
