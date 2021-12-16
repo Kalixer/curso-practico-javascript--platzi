@@ -154,7 +154,7 @@ div {
     background-color: #ffffff;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -162,7 +162,7 @@ div p{
     margin: 1rem;
     font-size: 2rem;
     height: 6vh;
-    width: 15vw;
+    width: 20rem;
 
     border: solid black;
     background-color: #7c7c7c;
