@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./desc-mas-cupon.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Marquetfree, el Amazon de Latam <strike>parodia MercadoLibre</strike></h1>
+    </header>
+    <main>
+        <h3>Silla gaming adamantium </h3>
+        
+        <section>
+           <p class="box" id="box1">
+            <input type="number" id="precioOriginal" placeholder="Precio Original">
+           </p>
+           <p class="box" id="box2">
+            <input type="number" id="descuento" placeholder="Porcentaje de descuento">
+            </p>
+            <h4>Cupon: 
+                <select class="cupon" id="cupones">
+                    <option value="0">No tengo</option>
+                    <option value="10">10%</option>
+                    <option value="15">15%</option>
+                    <option value="20">20%</option>
+                </select>
+            </h4>
+            <p class="posision">
+                <button type="button" onclick="accionDeBoton()">Calcular precio</button>
+                <strong id="default"></strong>
+            </p>
+        </section>
+        
+        <figure>
+            <img src="./img/terminator.png" alt="Silla Gaming marca patito">
+        </figure>
+        <div>
+            <p class="precios precio1" id="precioAnterior">
+            </p>
+            <p class="precios precio2" id="precioConDescuento">
+                Precio Actual
+            </p>
+            <button type="button" class="BotonCompra">Comprar</button>
+        </div>
+    </main>
+    <script src="desc-mas-cupon.js"></script>
+</body>
+</html>
