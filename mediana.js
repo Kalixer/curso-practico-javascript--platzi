@@ -29,3 +29,13 @@ if(esPar(lista1.length)){
 } else {
     mediana =  lista1[mitadLista1];
 }
+
+
+/*
+
+Reto 1: Crear funciones para calcular la mediana de cualquier
+lista
+
+Reto 2: Ordenar la lista de números
+
+Nota* = Debes usar el método Array.sort()
