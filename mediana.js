@@ -8,8 +8,8 @@
 
 
 let listaNumeros = [];
-const elementos_array = document.getElementById("elementos_Array");
-
+const elementos_array = document.getElementById("elementos_array");
+const resultado = document.getElementById("resultado");
 
 function esPar(numerito){
     if(numerito % 2 === 0){
@@ -58,5 +58,5 @@ function calcular(){
         mediana =  array[mitadLista];
     }
 
-    console.log(mediana)
+    resultado.innerText = "La mediana es de: " + mediana;
 }
