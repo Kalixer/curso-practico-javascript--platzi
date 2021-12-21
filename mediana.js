@@ -1,11 +1,14 @@
-const lista1 = [
-    100, 
-    200,
-    500,
-    400000000,
-];
+// const lista1 = [
+//     100, 
+//     200,
+//     500,
+//     400000000,
+// ];
 
-const mitadLista1 = parseInt(lista1.length / 2);
+
+
+let listaNumeros = [];
+const elementos_array = document.getElementById("elementos_Array");
 
 
 function esPar(numerito){
@@ -16,28 +19,44 @@ function esPar(numerito){
     }
 }
 
-let mediana;
 
-if(esPar(lista1.length)){
-    const elemento1 = lista1[mitadLista1 - 1];
-    const elemento2 = lista1[mitadLista1];
+function añadir(){
+    var number = document.getElementById("number");
+    var numero = parseInt(number.value);
+    
+    listaNumeros.push(numero);
+    console.log(listaNumeros);
 
-    const promedio = (elemento1 + elemento2) / 2;
-
-    mediana = promedio;
-
-} else {
-    mediana =  lista1[mitadLista1];
+    elementos_array.innerText += listaNumeros[listaNumeros.length - 1] + "_ ";
 }
 
 
-/*
+function calcular(){
 
-Reto 1: Crear funciones para calcular la mediana de cualquier
-lista
+    const arrayDesordenado = listaNumeros;
 
-Reto 2: Ordenar la lista de números
+    const array = arrayDesordenado.sort(
+        function (a, b){
+            return a - b;
+        }
+    )
+    console.log(array);
 
-Nota* = Debes usar el método Array.sort()
+    const mitadLista = parseInt(array.length / 2);
 
-*/
+    let mediana;
+
+    if(esPar(array.length)){
+        const elemento1 = array[mitadLista - 1];
+        const elemento2 = array[mitadLista];
+
+        const promedio = (elemento1 + elemento2) / 2;
+
+        mediana = promedio;
+
+    } else {
+        mediana =  array[mitadLista];
+    }
+
+    console.log(mediana)
+}
