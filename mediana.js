@@ -29,3 +29,15 @@ if(esPar(lista1.length)){
 } else {
     mediana =  lista1[mitadLista1];
 }
+
+
+/*
+Este es el código para ordenar los elementos de un array
+
+Array.sort(function (a, b){
+    return a - b;
+}
+)
+
+
+*/
