@@ -1,16 +1,36 @@
-// const lista1 = [
-//     1,
-//     2,
-//     3,
-//     1,
-//     2,
-//     3,
-//     4,
-//     2,
-//     2,
-//     2,
-//     1
-// ]
+/* 
+    1.- Crear un array que almacene el input del html                       (Ready)
+    2.- Crear / Enlazar un función que añada (.push) elementos al Array     (Ready)
+    3.- Crear una función que muestre los elementos en el DOM               (Ready)
+    4.- Crear / Enlazar una funcion que saque el resultado                  (Ready)
+
+    Bonus.- Crear un sistema que si antes pusiste "Nah" Despues diga "Bueno ya </brs>" (Goood Yeah => Ready)
+*/
+
+let mensajeActivado = 0;
+
+let listaElementos = [];
+
+function añadirElementos(){
+    const e = document.getElementById("arreglo");
+    const elemento = parseInt(e.value);
+    listaElementos.push(elemento);
+
+    const parrafo = document.getElementById("parrafoArreglo");
+    parrafo.innerText += elemento + "/ ";
+
+}
+
+function calcular(){
+    const parrafo = document.getElementById("parrafoBoton");
+    const bueno = document.getElementById("BuenoYa");
+    var resultado = moda(listaElementos);
+    parrafo.innerText = resultado;
+
+    if(mensajeActivado){
+        bueno.innerText = "Bueno ya, te lo muestro";
+    }
+}
 
 function moda(lista){
 
@@ -38,6 +58,11 @@ function moda(lista){
 }
 
 
+function mostrarMensaje(){
+    const mensaje = document.getElementById("parrafoBoton");
+    mensaje.innerText = "Si no quieres, no nomas. Y para esto trabajé tanto =,(";
+    mensajeActivado = 1;
+}
 
 
 
