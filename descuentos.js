@@ -1,5 +1,5 @@
 /* Formula para los decuentos
-        [P * (100 - D)] / 100
+        [Precio * (100 - Descuento)] / 100
 */
 
 
