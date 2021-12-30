@@ -31,7 +31,7 @@ main {
     margin: 1.3rem auto;
 
     max-width: 70rem;
-    min-width: 35rem;
+    min-width: 25rem;
     height: 120vh;
     border-radius: 2.5rem;
 
@@ -60,6 +60,9 @@ main section{
 }
 
 section p {
+    display: flex;
+}
+section div {
     display: flex;
 }
 
@@ -118,7 +121,7 @@ button:active{
 p strong{
     position: absolute;
     font-size: 2rem;
-    align-self: center;
+    justify-content: end;
     color:crimson;
 }
 
